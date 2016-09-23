@@ -19,7 +19,10 @@ public class Lab_02
 		city = "Del Mar, CA";
 		address = "288 dolphin cove court";
 		name = "Ricky Heidt";
-		System.out.println(name + " " + "lives at" + " " + address + " " + city + " " + zip);
+		System.out.println(name);
+		System.out.println(address);
+		System.out.println(city + " " + zip);
+		
 		
 		int l = 5;
 		int w = 10;
