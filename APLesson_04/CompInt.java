@@ -17,7 +17,7 @@ public class CompInt
 		int n = kb.nextInt();
 		
 		double MP = interest.calcMP(p, r, t , n);
-		System.out.printf("Total monthly payment is $%7.2f.", MP);
+		System.out.printf("Your total monthly payment is $%7.2f.", MP);
 	}
 	
 	public double calcMP(double pee, double are, int tee, int enn)
