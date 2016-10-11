@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Rectangle
+public class Rectangle1
 {
 	static double l;
 	static double w;

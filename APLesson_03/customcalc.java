@@ -2,6 +2,7 @@ import java.util.Scanner; //import Statement
 
 public class customcalc
 {
+
 	public static void main(String[]args)
 	{
 		//instantiate the new Scanner object "keyboard"
