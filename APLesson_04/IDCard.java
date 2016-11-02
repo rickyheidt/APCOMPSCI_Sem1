@@ -2,34 +2,39 @@ import java.util.Scanner;
 
 public class IDCard
 {
-	public static void  main(String[]args)
+	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
-		IDCard id = new IDCard();
+		IDCard ID = new IDCard();
 		
 		System.out.println("Enter your first name:");
-		String firstname = kb.next();
-		System.out.println("Enter your last name:");
-		String lastname = kb.next();
-		System.out.println("Enter your school name:");
-		String schoolname = kb.nextLine();
-		String next = kb.nextLine();
-		System.out.println("Enter the current year: (example: 15-16, 16-17, 17-18");
-		String year = kb.nextLine();
-		System.out.println("Enter your grade level:");
-		String grade = kb.next();
-		System.out.println("Enter your School ID number:");
-		String ID = kb.next();
+		String first = kb.next();
 		
-		System.out.println("   *****************************");
-		ID.format(schoolname, year);
-		ID.format(firstname, lastname);
-		ID.format(ID, grade);
-		System.out.println("   *****************************");
+		System.out.println("Enter your last name:");
+		String last = kb.next();
+		
+		System.out.println("Enter your ID Number:");
+		String number = kb.next();
+		
+		System.out.println("Enter the school:");
+		kb.nextLine();
+		String school = kb.nextLine();
+		
+		System.out.println("Enter the school year: (Ex. 14-15,16-17,");
+		String year = kb.next();
+		
+		System.out.println("Enter subject:");
+		String subject = kb.next();
+		
+		System.out.println("........................................");
+		ID.printIDLine(school, year);
+		ID.printIDLine(first, last);
+		ID.printIDLine(number, subject);
+		System.out.println("........................................");
 	}
 	
-	public void format(String entry1, String entry2)
+	public void printIDLine(String item1, String item2)
 	{
-		System.out.printf("%15s %15s\n", entry1, entry2);
+		System.out.printf("*  %15s  %20s  *\n", item1, item2);
 	}
 }

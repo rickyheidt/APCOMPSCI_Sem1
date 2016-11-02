@@ -2,7 +2,7 @@ public class BooleanVar
 {
 	public static void main(String[]args)
 	{
-		boolean tOrF = false;
+		boolean tOrF = true;
 		
 		if (tOrF)
 		{
