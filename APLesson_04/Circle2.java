@@ -17,7 +17,7 @@ public class Circle2
 		
 		public static void print(double r, double area)
 		{
-			System.out.println("The area of a circle with a radius of " + r + " is " + area);
+			System.out.println("The area of the circle with a radius of " + r + " is " + area);
 		}
 	
 }

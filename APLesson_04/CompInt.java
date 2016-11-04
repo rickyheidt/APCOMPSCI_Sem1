@@ -8,15 +8,15 @@ public class CompInt
 		Scanner kb = new Scanner(System.in);
 		
 		System.out.println("Enter loan amount:");
-		double p = kb.nextDouble();
+		double loan = kb.nextDouble();
 		System.out.println("Enter the interest rate in a decimal:");
-		double r = kb.nextDouble();
+		double rate = kb.nextDouble();
 		System.out.println("Enter the length of the loan (Years):");
-		int t = kb.nextInt();
+		int time = kb.nextInt();
 		System.out.println("Enter the number of times the interest is compounded per year");
-		int n = kb.nextInt();
+		int comp = kb.nextInt();
 		
-		double MP = interest.calcMP(p, r, t , n);
+		double MP = interest.calcMP(loan, rate, time , comp);
 		System.out.printf("Your total monthly payment is $%7.2f.", MP);
 	}
 	
