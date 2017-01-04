@@ -8,7 +8,7 @@ public class AverageDigits
 		int number = kb.nextInt();
 		int digits = 0;
 		int average = 0;
-		sumDigits(number, sum, num);
+		avDigits(number, digits, average);
 	}
 	
 	public static void avDigits(int number, int digits, int average)
@@ -18,8 +18,8 @@ public class AverageDigits
 		{
 			digits += 1;
 			average += num % 10;
-			num / 10;
+			num /= 10;
 		}
-		System.out.println("The average of the digits in " + num + " is " + average);
+		System.out.println("The average of the digits in " + number + " is " + (average/digits));
 	}
 }
