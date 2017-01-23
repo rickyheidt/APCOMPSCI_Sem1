@@ -10,9 +10,9 @@ public class Center
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please Enter Word 1: ");
 		word1 = kb.nextLine();
-		System.out.println("Please Enter Word 1: ");
+		System.out.println("Please Enter Word 2: ");
 		word2 = kb.nextLine();
-		System.out.println("Please Enter Word 1: ");
+		System.out.println("Please Enter Word 3: ");
 		word3 = kb.nextLine();
 		System.out.println(makeCenter(word1));
 		System.out.println(makeCenter(word2));
@@ -23,9 +23,9 @@ public class Center
 	{
 		if(word.length() >= 20)
 			return word;
-	}
-	else
-	{
-		return makeCenter(" " + word + " ");
+		else
+		{
+			return makeCenter(" " + word + " ");
+		}
 	}
 }
